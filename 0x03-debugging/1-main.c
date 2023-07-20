@@ -1,20 +1,24 @@
-#include <stdlib.h>
-#include <time.h>
 #include <stdio.h>
-#include "main.h"
 
-void positive_or_negative(int n)
+/**
+* main - causes an infinite loop
+* Return: 0
+*/
+
+int main(void)
 {
-	if (n > 0)
-	{
-		printf("%d is positive\n", n);
-	}
-	else if (n == 0)
-	{
-		printf("%d is zero\n", n);
-	}
-	else
-	{
-		printf("%d is negative\n", n);
-	}
+int i;
+
+printf("Infinite loop incoming :(\n");
+
+i = 0;
+
+while (i < 10)
+{
+    putchar(i);
+}
+
+    printf("Infinite loop avoided! \\o/\n");
+
+return (0);
 }
